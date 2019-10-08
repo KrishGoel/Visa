@@ -5,13 +5,13 @@ by **@KrishSkywalker7**
 This is a test local authentication app based on JS with passport.JS, Express.JS and MongoDB
 
 ### npm commands and installations
-'''
+```
 npm init
 npm install express --save
 npm install passport
 npm install body-parser --save
 npm install passport-local --save
-'''
+```
 
 ### MongoDB local machine setup
 ```
