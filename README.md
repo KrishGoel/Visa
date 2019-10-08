@@ -1,6 +1,7 @@
 # Test authentication app
-by *@KrishSkywalker7*
+by **@KrishSkywalker7**
 > Under construction
+
 This is a test local authentication app based on JS with passport.JS, Express.JS and MongoDB
 
 ### npm commands and installations
