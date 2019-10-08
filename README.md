@@ -21,4 +21,6 @@ npm install passport-local --save
 > db.userInfo.insert({"username":"[NAME]", "password":"[PASSWORD]"})
 > db.userInfo.find()
 ```
-In index.js, please add the MongoDB link
+In index.js, please add your MongoDB link
+
+I am kinda dum dum, don't judge this area pls
