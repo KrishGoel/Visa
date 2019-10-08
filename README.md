@@ -1,4 +1,4 @@
-# Test authentication app
+# Demo authentication app
 by **@KrishSkywalker7**
 > Under construction
 
