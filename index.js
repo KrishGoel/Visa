@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => res.sendFile('auth.html', { root : __dirname}));
 
-const port = process.env.PORT || 3500;
+const port = process.env.PORT || 3000;
 app.listen(port , () => console.log('App listening on port ' + port));
 
 /*  PASSPORT SETUP  */
@@ -30,11 +30,10 @@ passport.deserializeUser(function(id, cb) {
   });
 });
 
-
 /* MONGOOSE SETUP */
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/kryptik');
+mongoose.connect('databaseLink', {useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true});
 
 const Schema = mongoose.Schema;
 const UserDetail = new Schema({
@@ -42,8 +41,6 @@ const UserDetail = new Schema({
       password: String
     });
 const UserDetails = mongoose.model('userInfo', UserDetail, 'userInfo');
-
-
 
 /* PASSPORT LOCAL AUTHENTICATION */
 
